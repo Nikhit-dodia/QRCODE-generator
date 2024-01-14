@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous"/>
+  </head>
+  <body>
+
+   <!-- logo -->
+   <div class="logo">
+    <!-- Add your logo content here -->
+    <img src="assets/elephant.png" alt="Logo">
+</div>
+
+
+    <!-- navbar -->
+    <div class="container">
+
+      <header>
+        <main class="container">
+          <header>
+            <nav class="navbar-menu">
+              
+              <!-- Menu normal -->
+              <ul class="menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a>Projects</a>
+                 <ul class="submenu two">
+                    <li><a onclick="window.open('https://type-runner.netlify.app/')">Type-runner</a></li>
+                    <li><a onclick="window.open('https://prjct9.netlify.app/')">project-9</a></li>
+                    <li><a onclick="window.open('https://weightconvo.netlify.app/')">weight-converter</a></li>
+                  </ul>
+                </li>
+                <li><a onclick="window.open('https://www.linkedin.com/in/nikhit-dodia-ab474a202/')">LinkedIn</a></li>
+
+                <li><a onclick="window.open('https://www.blogger.com/blog/posts/3836897525022270327?bpli=1&pli=1')">Blogs</a>
+                 
+                </li>
+                <li><a>About</a>
+                  <ul class="submenu five">
+                    <li><a class="buttonDownload" href="./assets/Nikhit_resume.pdf">Download my resume </a></li>
+                    <li><a onclick="Window.open('')">About me</a></li>
+                  </ul>
+                </li>
+                <li><a onclick="window.open('https://github.com/Nikhit-dodia')">Github</a></li>
+              </ul>
+        </main>
+      </header>
+
+
+      <!-- wrapper  -->
+      <div class="wrapper">
+        <header>
+          <h1>QR Code Generator</h1>
+          <p>Paste a URL or enter text to create a QR code</p>
+        </header>
+        <div class="form">
+          <input type="text" spellcheck="false" placeholder="Enter text or URL to generate QR">
+          <button>Generate QR Code</button>
+        </div>
+        <div class="qr-code">
+          <img src="" alt="qr-code"> 
+        </div>
+      </div>
+
+
+      <!-- footer -->
+      <footer>
+        <div class="Foot">
+          All copyrights belong to <a href="https://www.instagram.com/nikhit_2701/"id="nikhit">@Nikhit Dodia</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

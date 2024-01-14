@@ -1,0 +1,425 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  background: #3498DB;
+  justify-content: center;
+}
+
+::selection {
+  color: #fff;
+  background: #3498DB;
+}
+
+/* logo */
+/* Add this to your existing CSS file or create a new one */
+
+/* Logo styling */
+.logo {
+    position: fixed; /* Fixed position so it stays in place while scrolling */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    padding: 10px; /* Add some padding for spacing */
+    z-index: 1000; /* Set a high z-index to make sure it's on top of other elements */
+}
+
+.logo img {
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  height: 265px;
+  max-width: 410px;
+  justify-content: center;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  margin-top: 8rem;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active {
+  height: 530px;
+}
+
+header h1 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+header p {
+  margin-top: 5px;
+  color: #575757;
+  font-size: 16px;
+}
+
+.wrapper .form {
+  margin: 20px 0 25px;
+}
+
+.form :where(input, button) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+
+.form input {
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+
+.form input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.form input::placeholder {
+  color: #999;
+}
+
+.form button {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: #3498DB;
+}
+
+.qr-code {
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.wrapper.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+
+.qr-code img {
+  width: 170px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  font-size: 10px;
+}
+
+.Foot a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+.Foot {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  
+}
+.nikhit{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+/* bootstrap navbar */
+/* * {
+  margin: 0;
+  padding: 0;
+}
+ */
+ body, html {
+  font-family: segoe ui;
+  font-size: 100%;
+  height: 100%;
+}
+
+/* button css */
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: #161c45;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  text-indent: 15px;
+  border: none;
+ }
+ 
+ .buttonDownload:hover {
+  background-color: #161c45;
+  color: white;
+ }
+ 
+ .buttonDownload:before, .buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+ }
+ 
+ .buttonDownload:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+ }
+ 
+ .buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 1s linear infinite;
+  animation-play-state: paused;
+ }
+ 
+ .buttonDownload:hover:before {
+  border-color: #cdefbd;
+ }
+ 
+ .buttonDownload:hover:after {
+  border-top-color: #cdefbd;
+  animation-play-state: running;
+ }
+ 
+ @keyframes downloadArrow {
+  0% {
+   margin-top: -7px;
+   opacity: 1;
+  }
+ 
+  0.001% {
+   margin-top: -15px;
+   opacity: 0.4;
+  }
+ 
+  50% {
+   opacity: 1;
+  }
+ 
+  100% {
+   margin-top: 0;
+   opacity: 0.4;
+  }
+ }
+/* container css */
+ .container {
+  margin: 1rem 0 2rem 0 ;
+  min-height: 100%;
+  overflow: auto;
+}
+
+/* ENLACES */
+a {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition: background-color .16s ease-in;
+}
+
+a:hover {
+  background-color: #48a4ff;
+}
+
+/* Barra de navegacion (contiene al nav mini menu) */
+.navbar-menu {
+  background-color: #000;
+  margin: 2% auto;
+  max-width: 1000px;
+  width: calc(100%);
+  border-radius: 10px;
+}
+
+/* Menu */
+.navbar-menu .menu {
+  display: block;
+  text-align: center;
+}
+
+/* List items*/
+.navbar-menu .menu li {
+  display: inline-block;
+}
+
+.navbar-menu .menu li:hover > .submenu {
+  display: block;
+  -webkit-animation-name: showSubMenu;
+  -webkit-animation-duration: .4s;
+}
+
+/* Submenus*/
+.navbar-menu .menu li ul {
+  background-color: #48a4ff;
+  display: none;
+  position: absolute;
+}
+
+/* List items de submenus */
+.navbar-menu .menu li ul li {
+  display: block;
+}
+
+.navbar-menu .menu li ul li a:active {
+  -webkit-animation-name: hideSubMenu;
+  -webkit-animation-duration: .4s;
+}
+
+/* Mini menu */
+.navbar-mini-menu {
+  background-color: #48a4ff;
+  display: none;
+}
+
+/* Bloque que tiene el boton para desplegar el mini menu */
+.navbar-mini-menu .menu-select {
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+/* Span que contiene el icono*/
+.navbar-mini-menu .menu-select .btn-select {
+  background: url("https://imgur.com/VbcTojM.png") no-repeat;
+  cursor: pointer;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 10px;
+  top: 10px;
+}
+
+/* Lista del mini menu */
+.navbar-mini-menu .mini-menu-options {
+  display: block;
+}
+
+/* Items del mini menu */
+.navbar-mini-menu .mini-menu-options li {
+  display: block;
+}
+
+/* Submenus de los items del mini menu */
+.navbar-mini-menu .mini-menu-options li .submenu {
+  display: none;
+}
+
+.navbar-mini-menu .mini-menu-options li:focus {
+  outline: 0;
+}
+
+.navbar-mini-menu .mini-menu-options li:focus > .submenu {
+  display: block;
+  -webkit-animation-name: showSubMenu;
+  -webkit-animation-duration: .4s;
+}
+
+/* Enlaces del mini menu */
+.navbar-mini-menu .mini-menu-options li a {
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+@-webkit-keyframes showSubMenu {
+    0% {
+      transform: scale(0,0);
+    }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+@-webkit-keyframes hideSubMenu {
+  0% {
+    transform: scale(1,1);
+  }
+  100% {
+    transform: scale(0,0);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* Elimina los margenes al nav */
+  .navbar-menu {
+    margin: 0;
+  }
+  
+  /* Esconde el menu normal */
+  .navbar-menu .menu {
+    display: none;
+  }
+  
+  /* Muestra el mini menu */
+  .navbar-mini-menu {
+    display: block;
+  }
+  
+  /* Esconde la lista del mini menu */
+  .navbar-mini-menu .mini-menu-options {
+    display: none;
+  } 
+}
+
+
+
+@media (max-width: 430px) {
+  .wrapper {
+    height: 255px;
+    padding: 16px 20px;
+  }
+  .wrapper.active {
+    height: 510px;
+  }
+  header p {
+    color: #696969;
+  }
+  .form :where(input, button) {
+    height: 52px;
+  }
+  .qr-code img {
+    width: 160px;
+  }
+  footer {
+    margin-top: 1rem;
+  }
+}
